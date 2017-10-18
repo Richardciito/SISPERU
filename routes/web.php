@@ -10,7 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//dd('routes');
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('admin/users/create',function(){
+	return 'aqui algo';
+});
+
+route::pattern('id', '[0-9]+');
+Route::get('admin/users/{id}', function($id) {
+    //
+    return $id;
 });
